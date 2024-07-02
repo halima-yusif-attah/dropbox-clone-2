@@ -26,6 +26,6 @@ The website features the following pages for easy navigation:
 
 
 ## Demo
-Explore the live demo of the project [here]  (https://dropbox-clone-2.netlify.app/)).
+Explore the live demo of the project [here]  (https://online-storage.netlify.app/)
 
 
