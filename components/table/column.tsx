@@ -44,20 +44,14 @@ export const columns: ColumnDef<FileType>[] = [
   {
     accessorKey: "downloadURL",
     header: "Link",
-    cell: ({ renderValue, ...props }) => (
-      <Image
-       src={renderValue() as string}
-       alt="uploaded image"
-       width={40}
-       height={40}
-      />
-      // <a
-      //   href={renderValue() as string}
-      //   target="_blank"
-      //   className="underline text-blue-500 hover:text-blue-600"
-      // >
-      //   Download
-      // </a>
+    cell: ({ renderValue, ...props }) => ( 
+      <a
+        href={renderValue() as string}
+        target="_blank"
+        className="underline text-blue-500 hover:text-blue-600"
+      >
+        Download
+      </a>
     ),
   },
 ];
