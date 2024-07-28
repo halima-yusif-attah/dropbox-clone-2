@@ -21,8 +21,6 @@ async function Dashboard() {
     size: doc.data().size
   }))
 
-  console.log("skeletonFiles", skeletonFiles);
-
 
   return (
     <div className="border-t">
@@ -31,8 +29,6 @@ async function Dashboard() {
         <section className="container space-y-2">
           <h2 className="font-bold">All Files</h2>
         
-          {/* <div className="">Tabble Wrapper</div> */}
-
           <TableWrapper skeletonFiles={skeletonFiles}/>
 
         </section>

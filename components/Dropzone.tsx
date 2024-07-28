@@ -20,7 +20,7 @@ function Dropzone() {
     acceptedFiles.forEach((file) => {
       const reader = new FileReader();
 
-      reader.abort = () => console.log("file reading was aborted");
+      reader.onabort = () => console.log("file reading was aborted");
       reader.onerror = () => console.log("file reading has failed");
 
       reader.onload = async () => {

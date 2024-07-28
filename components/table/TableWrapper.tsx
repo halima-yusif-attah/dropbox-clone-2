@@ -47,19 +47,6 @@ function TableWrapper({ skeletonFiles  }: { skeletonFiles: FileType[] }) {
           <Skeleton className="h-5 w-full" />
         </Button>
 
-        {/* <div className="border rounded-lg">
-          <div className="border-b h-12">
-            {skeletonFiles.map((file) => (
-              <div
-                className="flex items-center space-x-4 p-5 w-full"
-                key={file.id}
-              >
-                <Skeleton className="h-12 w-12" />
-                <Skeleton className="h-12 w-full" />
-              </div>
-            ))}
-          </div>
-        </div> */}
 
         <div className="border rounded-lg">
           <div className="border-b h-12" />
