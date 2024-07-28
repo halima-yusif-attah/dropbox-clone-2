@@ -7,6 +7,10 @@ const nextConfig = {
             {
                 protocol: "https",
                 hostname: "www.shareicon.net"
+            },
+            {
+                protocol: "https",
+                hostname: "firebasestorage.googleapis.com"
             }
         ]
     }

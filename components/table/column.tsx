@@ -5,6 +5,7 @@ import { FileType } from "@/typings";
 import { ColumnDef } from "@tanstack/react-table";
 import prettyBytes from "pretty-bytes";
 import { FileIcon, defaultStyles } from "react-file-icon";
+import Image from 'next/image';
 
 export const columns: ColumnDef<FileType>[] = [
    {
@@ -44,13 +45,19 @@ export const columns: ColumnDef<FileType>[] = [
     accessorKey: "downloadURL",
     header: "Link",
     cell: ({ renderValue, ...props }) => (
-      <a
-        href={renderValue() as string}
-        target="_blank"
-        className="underline text-blue-500 hover:text-blue-600"
-      >
-        Download
-      </a>
+      <Image
+       src={renderValue() as string}
+       alt="uploaded image"
+       width={40}
+       height={40}
+      />
+      // <a
+      //   href={renderValue() as string}
+      //   target="_blank"
+      //   className="underline text-blue-500 hover:text-blue-600"
+      // >
+      //   Download
+      // </a>
     ),
   },
 ];
